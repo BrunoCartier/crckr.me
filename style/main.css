@@ -2,10 +2,10 @@ html {
   min-width: 100%;
   box-sizing: border-box;
   max-width: 500px;
-  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Segoe UI", "Helvetica Neue", sans-serif;
-  color: DarkSlateGray;
-  background-color: HoneyDew;
-  font-size: 16px;
+  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  color: #2f4f4f;
+  background-color: #fffff0;
+  font-size: 17px;
   line-height: 1.5;
 }
 body {
@@ -44,6 +44,19 @@ button {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+.styled-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px solid #2f4f4f;
+  color: #2f4f4f;
+  background-color: Snow;
+}
+.styled-btn:hover,
+.styled-btn:active {
+  color: Snow;
+  background-color: #2f4f4f;
 }
 .control-complete-shown,
 .rules-complete,

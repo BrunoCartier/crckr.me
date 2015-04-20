@@ -1,6 +1,10 @@
 @max-width: 500px;
 @spacing: 10px;
+@radius-small: 2px;
 @golden-number: 1.618;
+
+@color-text: DarkSlateGray;
+@color-bg: Ivory;
 
 // ---
 // Document
@@ -10,10 +14,10 @@ html {
   min-width: 100%;
   box-sizing: border-box;
   max-width: @max-width;
-  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Segoe UI", "Helvetica Neue", sans-serif;
-  color: DarkSlateGray;
-  background-color: HoneyDew;
-  font-size: 16px;
+  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  color: @color-text;
+  background-color: @color-bg;
+  font-size: 17px;
   line-height: 1.5;
 }
 
@@ -69,6 +73,21 @@ button {
   position: absolute;
   top: @spacing / 2;
   right: @spacing / 2;
+}
+
+.styled-btn {
+  cursor: pointer;
+  padding: (@spacing / 2) @spacing;
+  border-radius: @radius-small;
+  border: 1px solid @color-text;
+  color: @color-text;
+  background-color: Snow;
+
+  &:hover,
+  &:active {
+    color: Snow;
+    background-color: @color-text;
+  }
 }
 
 // ---
