@@ -12,6 +12,7 @@ body {
   max-width: 500px;
   margin: auto;
   padding: 10px;
+  position: relative;
 }
 *,
 *:before,
@@ -31,4 +32,9 @@ a:active {
 }
 a:visited {
   color: DarkSlateBlue;
+}
+.lang-links {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }

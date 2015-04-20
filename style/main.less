@@ -21,6 +21,7 @@ body {
   max-width: @max-width;
   margin: auto;
   padding: @spacing;
+  position: relative;
 }
 
 *,
@@ -49,4 +50,14 @@ a:active {
 
 a:visited {
   color: DarkSlateBlue;
+}
+
+// ---
+// Site specific
+// ---
+
+.lang-links {
+  position: absolute;
+  top: @spacing / 2;
+  right: @spacing / 2;
 }
