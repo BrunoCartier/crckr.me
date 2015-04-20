@@ -1,0 +1,52 @@
+@max-width: 500px;
+@spacing: 10px;
+@golden-number: 1.618;
+
+// ---
+// Document
+// ---
+
+html {
+  min-width: 100%;
+  box-sizing: border-box;
+  max-width: @max-width;
+  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Segoe UI", "Helvetica Neue", sans-serif;
+  color: DarkSlateGray;
+  background-color: HoneyDew;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  max-width: @max-width;
+  margin: auto;
+  padding: @spacing;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// ---
+// HTML elements
+// ---
+
+h1,
+h2 {
+  text-align: center;
+}
+
+a {
+  color: RoyalBlue;
+}
+
+a:hover,
+a:active {
+  text-shadow: 0 0 4px Lavender;
+}
+
+a:visited {
+  color: DarkSlateBlue;
+}
