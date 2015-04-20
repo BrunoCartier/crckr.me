@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^en/?$ /en/crockers-rules [R]
+RewriteRule ^fr/?$ /fr/regles-de-crocker [R]
+
+RewriteRule ^en/crockers-rules$ /pages/en.html [L]
+RewriteRule ^fr/regles-de-crocker$ /pages/fr.html [L]
