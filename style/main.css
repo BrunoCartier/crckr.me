@@ -6,7 +6,7 @@ html {
   color: DarkSlateGray;
   background-color: HoneyDew;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 body {
   max-width: 500px;
@@ -33,8 +33,28 @@ a:active {
 a:visited {
   color: DarkSlateBlue;
 }
+label {
+  display: block;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
 .lang-links {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+.control-complete-shown,
+.rules-complete,
+.control-hide-complete {
+  display: none;
+}
+.control-complete-shown:checked ~ .rules-complete,
+.control-complete-shown:checked ~ .control-hide-complete {
+  display: block;
+}
+.control-complete-shown:checked ~ .rules-extract,
+.control-complete-shown:checked ~ .control-show-complete {
+  display: none;
 }
