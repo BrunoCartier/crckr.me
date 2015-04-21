@@ -1,6 +1,7 @@
 @max-width: 500px;
 @spacing: 10px;
 @radius-small: 2px;
+@font-size-base: 17px;
 @golden-number: 1.618;
 
 @color-text: DarkSlateGray;
@@ -17,13 +18,13 @@ html {
   font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
   color: @color-text;
   background-color: @color-bg;
-  font-size: 17px;
+  font-size: @font-size-base;
   line-height: 1.5;
 }
 
 body {
   max-width: @max-width;
-  margin: auto;
+  margin: 0 auto @spacing;
   padding: @spacing;
   position: relative;
 }
@@ -77,11 +78,12 @@ button {
 
 .styled-btn {
   cursor: pointer;
-  padding: (@spacing / 2) @spacing;
+  padding: @spacing;
   border-radius: @radius-small;
   border: 1px solid @color-text;
   color: @color-text;
   background-color: Snow;
+  font-size: @font-size-base - 3;
 
   &:hover,
   &:active {

@@ -10,7 +10,7 @@ html {
 }
 body {
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto 10px;
   padding: 10px;
   position: relative;
 }
@@ -47,11 +47,12 @@ button {
 }
 .styled-btn {
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 2px;
   border: 1px solid #2f4f4f;
   color: #2f4f4f;
   background-color: Snow;
+  font-size: 14px;
 }
 .styled-btn:hover,
 .styled-btn:active {
