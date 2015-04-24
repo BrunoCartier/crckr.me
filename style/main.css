@@ -47,6 +47,14 @@ ul {
 li {
   margin: 20px 0;
 }
+pre {
+  overflow: auto;
+  padding: 5px 10px;
+  border: 1px solid Silver;
+  font-family: monospace, monospace;
+  font-size: 1em;
+  page-break-inside: avoid;
+}
 .lang-links {
   position: absolute;
   top: 5px;
