@@ -51,8 +51,9 @@ pre {
   overflow: auto;
   padding: 5px 10px;
   border: 1px solid Silver;
+  background-color: Snow;
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: small;
   page-break-inside: avoid;
 }
 footer {
