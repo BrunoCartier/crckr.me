@@ -1,11 +1,13 @@
-@max-width: 500px;
+@max-width: 560px;
 @spacing: 10px;
 @radius-small: 2px;
-@font-size-base: 17px;
+@font-size-base: 16px;
 @golden-number: 1.618;
 
 @color-text: DarkSlateGray;
 @color-bg: Ivory;
+@color-red: FireBrick;
+@color-green: ForestGreen;
 
 // ---
 // Document
@@ -42,6 +44,7 @@ body {
 h1,
 h2 {
   text-align: center;
+  text-shadow: 0 0 2px Gainsboro;
 }
 
 a {
@@ -64,6 +67,14 @@ label {
 
 button {
   cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: (@spacing * 2) 0;
 }
 
 // ---
@@ -90,6 +101,30 @@ button {
     color: Snow;
     background-color: @color-text;
   }
+}
+
+.positive li,
+.negative li {
+  position: relative;
+  padding-left: @spacing * 3;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -(@spacing * 3);
+    font-size: @font-size-base * @golden-number * 2;
+    text-shadow: -1px 0 2px LightSlateGray;
+  }
+}
+
+.positive li:before {
+  content: '✓';
+  color: @color-green;
+}
+
+.negative li:before {
+  content: '✗';
+  color: @color-red;
 }
 
 // ---
