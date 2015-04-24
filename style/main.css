@@ -55,6 +55,14 @@ pre {
   font-size: 1em;
   page-break-inside: avoid;
 }
+footer {
+  margin-top: 30px;
+  font-size: small;
+  text-align: center;
+}
+footer a {
+  margin: 0 5px;
+}
 .lang-links {
   position: absolute;
   top: 5px;
@@ -94,6 +102,12 @@ pre {
 .negative li:before {
   content: '✗';
   color: #b22222;
+}
+.social-links {
+  text-align: center;
+}
+.social-links a {
+  margin: 0 5px;
 }
 .control-complete-shown,
 .rules-complete,

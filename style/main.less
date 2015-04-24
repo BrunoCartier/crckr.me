@@ -87,6 +87,16 @@ pre {
   page-break-inside: avoid;
 }
 
+footer {
+  margin-top: @spacing * 3;
+  font-size: small;
+  text-align: center;
+
+  a {
+    margin: 0 (@spacing / 2);
+  }
+}
+
 // ---
 // Site specific
 // ---
@@ -135,6 +145,14 @@ pre {
 .negative li:before {
   content: '✗';
   color: @color-red;
+}
+
+.social-links {
+  text-align: center;
+
+  a {
+    margin: 0 (@spacing / 2);
+  }
 }
 
 // ---
