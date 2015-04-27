@@ -59,10 +59,11 @@ pre {
 footer {
   margin-top: 30px;
   font-size: small;
+  line-height: 2.25;
   text-align: center;
 }
 footer a {
-  margin: 0 5px;
+  margin: 10px;
 }
 .lang-links {
   position: absolute;
@@ -106,10 +107,9 @@ footer a {
 }
 .social-links {
   text-align: center;
-  line-height: 2.25;
 }
 .social-links a {
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .control-complete-shown,
 .rules-complete,
