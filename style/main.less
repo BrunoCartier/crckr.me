@@ -2,6 +2,7 @@
 @spacing: 10px;
 @radius-small: 2px;
 @font-size-base: 16px;
+@line-height-base: 1.5;
 @golden-number: 1.618;
 
 @color-text: DarkSlateGray;
@@ -21,7 +22,7 @@ html {
   color: @color-text;
   background-color: @color-bg;
   font-size: @font-size-base;
-  line-height: 1.5;
+  line-height: @line-height-base;
 }
 
 body {
@@ -150,9 +151,10 @@ footer {
 
 .social-links {
   text-align: center;
+  line-height: @line-height-base * @line-height-base;
 
   a {
-    margin: 0 (@spacing / 2);
+    margin: 0 @spacing;
   }
 }
 

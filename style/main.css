@@ -106,9 +106,10 @@ footer a {
 }
 .social-links {
   text-align: center;
+  line-height: 2.25;
 }
 .social-links a {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .control-complete-shown,
 .rules-complete,

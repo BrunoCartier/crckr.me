@@ -9,3 +9,19 @@ RewriteRule ^fr/regles-de-crocker$ /pages/fr.html [L]
 # http://stackoverflow.com/a/1270281/4506790
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# http://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault "access plus 2 weeks"
+
+  # CSS
+  ExpiresByType text/css    "access plus 1 week"
+
+  # Favicon (cannot be renamed!) and cursor images
+  ExpiresByType image/vnd.microsoft.icon    "access plus 1 week"
+  ExpiresByType image/x-icon    "access plus 1 week"
+
+  # HTML
+  ExpiresByType text/html    "access plus 60 seconds"
+</IfModule>
