@@ -1,12 +1,23 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   min-width: 100%;
   box-sizing: border-box;
   max-width: 560px;
-  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
   color: #2f4f4f;
   background-color: #fffff0;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  html {
+    font-family: "Open Sans", sans-serif;
+  }
 }
 body {
   max-width: 560px;
@@ -43,6 +54,7 @@ button {
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
 li {
   margin: 20px 0;
@@ -59,7 +71,7 @@ pre {
 footer {
   margin-top: 30px;
   font-size: small;
-  line-height: 2.25;
+  line-height: 2.56;
   text-align: center;
 }
 footer a {
@@ -77,24 +89,19 @@ footer a {
   border: 1px solid #2f4f4f;
   color: #2f4f4f;
   background-color: Snow;
-  font-size: 13px;
+  font-size: 14px;
 }
 .styled-btn:hover,
 .styled-btn:active {
   color: Snow;
   background-color: #2f4f4f;
 }
-.positive li,
-.negative li {
-  position: relative;
-  padding-left: 30px;
-}
 .positive li:before,
 .negative li:before {
-  position: absolute;
-  top: 0;
-  left: -30px;
-  font-size: 51.776px;
+  padding: 5px 10px 0 0;
+  float: left;
+  font-size: 55.012px;
+  line-height: 45.012px;
   text-shadow: -1px 0 2px #778899;
 }
 .positive li:before {

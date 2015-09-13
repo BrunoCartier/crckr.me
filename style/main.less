@@ -1,8 +1,8 @@
 @max-width: 560px;
 @spacing: 10px;
 @radius-small: 2px;
-@font-size-base: 16px;
-@line-height-base: 1.5;
+@font-size-base: 17px;
+@line-height-base: 1.6;
 @golden-number: 1.618;
 
 @color-text: DarkSlateGray;
@@ -14,15 +14,26 @@
 // Document
 // ---
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   min-width: 100%;
   box-sizing: border-box;
   max-width: @max-width;
-  font-family: "Source Sans Pro", "Open Sans", Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: Ubuntu, "Dejavu Sans", "Segoe UI", "Helvetica Neue", sans-serif;
   color: @color-text;
   background-color: @color-bg;
   font-size: @font-size-base;
   line-height: @line-height-base;
+
+  @media (min-width: 768px) {
+    font-family: "Open Sans", sans-serif;
+  }
 }
 
 body {
@@ -72,6 +83,7 @@ button {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 li {
@@ -128,14 +140,11 @@ footer {
 
 .positive li,
 .negative li {
-  position: relative;
-  padding-left: @spacing * 3;
-
   &:before {
-    position: absolute;
-    top: 0;
-    left: -(@spacing * 3);
+    padding: (@spacing / 2) @spacing 0 0;
+    float: left;
     font-size: @font-size-base * @golden-number * 2;
+    line-height: @font-size-base * @golden-number * 2 - @spacing;
     text-shadow: -1px 0 2px LightSlateGray;
   }
 }
